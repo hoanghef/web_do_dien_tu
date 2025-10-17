@@ -10,38 +10,54 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class UserSeeder extends Seeder
 {
-
     /**
-     *
-     *
-     * @return void
+     * Run the database seeds.
      */
     public function run()
     {
         User::create([
-            "fullname" => "Nguyễn Văn Chiến",
-            "username" => "NguyenChien",
-            "email" => "chien@gmail.com",
-            "password" => Hash::make("1"),
-            "image" => env("IMAGE_PROFILE"),
-            "phone" => "0912345678",
-            "gender" => "Nam",
-            "address" => "Tiến Thịnh Mê Linh Hà Nội",
+            "fullname" => "Tống Nguyên Thắng",
+            "username" => "nguyenthang",
+            "email" => "nguyenthang6505@gmail.com",
+            "password" => Hash::make("1"), 
+            "image" => "profile/profile.jpg",
+            "phone" => "0328238116",
+            "gender" => "M",
+            "address" => "Quyết Tiến Tiên Phương",
             "role_id" => 1,
-            'remember_token' => Str::random(30),
-        ]);
-            User::create([
-            "fullname" => "Hoàng Tuấn Kiệt",
-            "username" => "TuanKiet",
-            "email" => "tuankiet@gmail.com",
-            "password" => Hash::make("1"),
-            "image" => env("IMAGE_PROFILE"),
-            "phone" => "0974807212",
-            "gender" => "Nam",
-            "address" => "Ngõ 197 Văn Quán Hà Đông",
-            "role_id" => 2,
-            'remember_token' => Str::random(30),
+            "remember_token" => Str::random(30),
+            "created_at" => "2025-10-08 16:44:46",
+            "updated_at" => "2025-10-08 16:44:46",
         ]);
 
+        User::create([
+            "fullname" => "Park Eun Bin",
+            "username" => "Park Eun Bin",
+            "email" => "ha@gmail.com",
+            "password" => Hash::make("1"),
+            "image" => "profile/Unknown.jpg",
+            "phone" => "057368594",
+            "gender" => "M",
+            "address" => "Hợp Đồng Chương Mỹ",
+            "role_id" => 2,
+            "remember_token" => Str::random(30),
+            "created_at" => "2025-10-08 16:51:13",
+            "updated_at" => "2025-10-09 15:03:33",
+        ]);
+
+        User::create([
+            "fullname" => "Tống Quốc Việt",
+            "username" => "Shin Eun Soo",
+            "email" => "quocvietp171@gmail.com",
+            "password" => Hash::make("1"),
+            "image" => "profile/profile.jpg",
+            "phone" => "0971814725",
+            "gender" => "M",
+            "address" => "Quyết Tiến Tiên Phương CHương Mỹ Hà Nội",
+            "role_id" => 2,
+            "remember_token" => Str::random(30),
+            "created_at" => "2025-10-17 07:24:06",
+            "updated_at" => "2025-10-17 07:24:06",
+        ]);
     }
 }
