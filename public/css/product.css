@@ -1,0 +1,28 @@
+.add-product-btn {
+    /* Bố cục và căn chỉnh */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    /* Kích thước và khoảng cách trong */
+    padding: 10px 28px;   /* Trên dưới 10px, hai bên 28px — vừa tay */
+    margin-top: 25px;      /* Khoảng cách phía trên nhẹ */
+    margin-bottom: 5px;   /* Cách phần dưới nhẹ */
+    margin-left: 0;       /* Không lệch trái */
+    margin-right: 0;      /* Không lệch phải */
+
+    /* Style nền và viền */
+    background-color: #fffb00;
+    color: #ffffff;
+    border: 2px solid #00f7ff;
+    border-radius: 10px;
+
+    /* Hiệu ứng và bóng */
+    box-shadow: 0 3px 6px rgba(0, 253, 241, 0.35);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
