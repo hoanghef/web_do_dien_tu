@@ -82,4 +82,3 @@ npm run build
  
 7️⃣ Khởi động server Laravel
 php artisan serve
-<img width="468" height="645" alt="image" src="https://github.com/user-attachments/assets/161d2d2d-b2e3-4d85-9a55-8c053c32c716" />
