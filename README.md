@@ -59,31 +59,16 @@ Trang web được phát triển bằng **Laravel**, một framework PHP mạnh 
 ```bash
 git clone https://github.com/hoanghef/web_do_dien_tu.git
 Sau khi clone xong, di chuyển vào thư mục dự án:
-
-bash
-Sao chép mã
 cd Electronic
 2️⃣ Cài đặt các gói phụ thuộc PHP và Node.js
 Cài đặt các thư viện PHP cần thiết:
-
-bash
-Sao chép mã
 composer install
 Cài đặt các gói front-end:
-
-bash
-Sao chép mã
 npm install
 3️⃣ Cấu hình môi trường
 Tạo file .env từ file mẫu:
-
-bash
-Sao chép mã
 cp .env.example .env
 Sau đó mở file .env và chỉnh lại các thông tin sau cho phù hợp:
-
-env
-Sao chép mã
 APP_NAME="Laravel"
 APP_ENV=local
 APP_KEY=
@@ -97,33 +82,16 @@ DB_DATABASE=electronic
 DB_USERNAME=root
 DB_PASSWORD=
 4️⃣ Tạo khóa ứng dụng
-bash
-Sao chép mã
 php artisan key:generate
 5️⃣ Chạy migration và seed dữ liệu mẫu
-bash
-Sao chép mã
 php artisan migrate --seed
 Lệnh này sẽ:
-
 Tạo các bảng trong cơ sở dữ liệu.
-
 Thêm dữ liệu mẫu để bạn có thể thử nghiệm ngay.
-
 6️⃣ Biên dịch giao diện (CSS & JS)
-Nếu bạn muốn chạy ở chế độ phát triển:
-
-bash
-Sao chép mã
 npm run dev
-Hoặc build cho môi trường production:
-
-bash
-Sao chép mã
 npm run build
 7️⃣ Khởi động server Laravel
-bash
-Sao chép mã
 php artisan serve
 Sau đó truy cập:
 👉 http://localhost:8000
